@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newsletter</title>
 </head>
-
-<header>
-    <nav>
-        <ul>
-         <li><a href="../homepage.html">Homepage</a></li>
-          <li><a href="piante da esterno.html">Piante da esterno</a></li>  
-           <li> <a href="piante da appartamento.html">Piante da appartamento</a></li>
-</ul>
-</nav>
-</header>
 <body>
-    <section>
+ <header>
+    <nav>
+       <ul>
+         <li><a href="../index.html">Homepage</a></li>
+         <li><a href="piante-da-esterno.html">Piante da esterno</a></li>  
+         <li> <a href="piante-da-appartamento.html">Piante da appartamento</a></li>
+       </ul>
+    </nav>
+ </header>
+
+ <section>
         <form name="inserimento dati" action="newsletter.html" method="get" enctype="multipart/form-data">
-<fieldset>
+ <fieldset>
     <legend>Registrati per rimanere aggiornato</legend>
     <label for="nome">Nome</label>
     <input type="text" name="nome" required autofocus>
@@ -27,16 +27,15 @@
     <input type="email" name="email" rquired>
     <label for="password">Password</label>
     <input type="password" name="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Deve contenere almeno un numero,una lettera minuscola e maiuscola e almeno 8 caratteri">
-<div>
+ <div>
     <p>
-          Acconsento a ricevere comunicazioni a carattere informativo e/o commerciale tramite posta elettronica
-       <input type="checkbox" name="subscrive" checked="checked">
+     Acconsento a ricevere comunicazioni a carattere informativo e/o commerciale tramite posta elettronica
+      <input type="checkbox" name="subscrive" checked="checked">
 
     </p>
-</div>
-  
-        <input type="submit" name="invia">
-</fieldset>
-        </section>
+ </div>
+    <input type="submit" name="invia">
+ </fieldset>
+ </section>
 </body>
 </html>

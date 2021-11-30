@@ -1,0 +1,147 @@
+main {
+    display: flex;
+    width: 100vw;
+    padding: 0px;
+    display: -webkit-flex;
+    -webkit-flex-flow: row;
+    flex-flow: row;
+
+}
+
+main>nav {
+    border: lightslategrey;
+    background: lightsteelblue;
+    -webkit-flex: 2 20%;
+    flex: 2 20%;
+    -webkit-order: 1;
+    order: 1;
+
+}
+
+ul nav {
+    list-style: none;
+    text-align: left;
+}
+
+nav li {
+    flex-direction: row;
+    text-align: left;
+    list-style: none;
+}
+
+nav li a {
+    color: rgb(195, 241, 211);
+    font-weight: bold;
+    font-size: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-decoration: none;
+    text-align: left;
+    position: relative;
+    left: -30px;
+}
+
+nav li a:hover,
+nav li a.active {
+    color: rgb(128, 14, 14)
+}
+
+body {
+    background-color: #fafbff;
+}
+
+h1 {
+    color: rgb(10, 189, 165);
+    text-decoration: none;
+    text-align: center;
+    font-size: 5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+a {
+    color: darkred;
+}
+
+a:visited {
+    color: darkmagenta;
+}
+
+a:hover,
+a:focus {
+    color: goldenrod;
+}
+
+
+
+.lista {
+
+    margin-left: 0;
+    list-style: none;
+    counter-reset: li;
+    font-family: calibri;
+}
+
+.lista li {
+    padding: 10px 0;
+    position: relative;
+    left: 1.5em;
+    margin-bottom: 0.75em;
+    padding-left: 1em;
+    background: #E3DEDC;
+}
+
+.lista li:before {
+    padding: 10px 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -1.5em;
+    width: 1.875em;
+    text-align: center;
+    color: rgb(128, 14, 14);
+    font-weight: bold;
+    background: #D66786;
+    border-bottom-left-radius: 70em;
+    border-top-left-radius: 70em;
+    counter-increment: li;
+    content: counter(li);
+}
+
+main>aside {
+    padding: 5px;
+    border: lightslategrey;
+    background: lightsteelblue;
+    -webkit-flex: 2 20%;
+    flex: 2 20%;
+    -webkit-order: 3;
+    order: 3;
+    flex-shrink: 2;
+
+
+}
+
+main>.container {
+    padding: 5px;
+    background-color: lightcoral;
+    -webkit-flex: 3 60%;
+    flex: 3 60%;
+    -webkit-order: 2;
+    order: 2;
+    flex-shrink: 1;
+
+
+}
+
+main>.container p {
+    font-size: medium;
+    color: rgb(11, 99, 49);
+    text-align: center;
+}
+
+h2 {
+    font-weight: bold;
+    text-align: center;
+    color: rgb(188, 211, 198);
+}
